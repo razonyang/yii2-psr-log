@@ -1,0 +1,41 @@
+{
+    "name": "razonyang/yii2-psr-log",
+    "description": "Yii2 PSR Logger Adapter",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "psr", "logger"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Razon Yang",
+            "email": "razonyang@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "psr/log": "^1.1",
+        "yiisoft/yii2": "~2.0.13"
+    },
+    "require-dev": {
+        "codeception/codeception": "^3.0",
+        "codeception/verify": "^1.1",
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "RazonYang\\Yii2\\Psr\\Log\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RazonYang\\Yii2\\Psr\\Log\\Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
